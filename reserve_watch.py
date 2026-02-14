@@ -4,7 +4,7 @@ from datetime import datetime
 from playwright.sync_api import sync_playwright
 
 # ====== 네 조건 ======
-TARGET_DATE = "2026-02-19"
+TARGET_DATE = "2026-03-13"
 PEOPLE = 2
 MIN_TIME_24 = "19:00"     # 19:00 이후만
 POLL_SECONDS = 15
@@ -212,4 +212,5 @@ def main_watchdog():
 
 if __name__ == "__main__":
     main_watchdog()
+
 
