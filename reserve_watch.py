@@ -7,11 +7,11 @@ from playwright.sync_api import sync_playwright
 TARGET_DATE = "2026-02-19"
 PEOPLE = 2
 MIN_TIME_24 = "19:00"     # 19:00 이후만
-POLL_SECONDS = 30
+POLL_SECONDS = 15
 # ====================
 
 # ====== 중단 감지/알림 ======
-HEARTBEAT_EVERY = 10 * 60     # 10분마다 "살아있음" 알림
+HEARTBEAT_EVERY = 60 * 60     # 10분마다 "살아있음" 알림
 RESTART_COOLDOWN = 10         # 크래시 후 재시작 대기(초)
 # ===========================
 
@@ -212,3 +212,4 @@ def main_watchdog():
 
 if __name__ == "__main__":
     main_watchdog()
+
