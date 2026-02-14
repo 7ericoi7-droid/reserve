@@ -1,0 +1,13 @@
+[build]
+builder = "NIXPACKS"
+
+[build.nixpacksPlan.phases.install]
+cmds = [
+  "python3 -m ensurepip --upgrade",
+  "python3 -m pip install -U pip",
+  "python3 -m pip install -r requirements.txt",
+  "python3 -m playwright install --with-deps chromium"
+]
+
+[start]
+cmd = "python3 reserve_watch.py"
